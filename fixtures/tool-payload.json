@@ -1,0 +1,23 @@
+{
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "inspect",
+        "description": "Inspect a synthetic fixture",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "path"
+          ]
+        }
+      }
+    }
+  ],
+  "tool_choice": "auto"
+}

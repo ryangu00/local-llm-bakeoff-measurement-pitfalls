@@ -1,0 +1,19 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "image_url",
+          "image_url": {
+            "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+aO1cAAAAASUVORK5CYII="
+          }
+        },
+        {
+          "type": "text",
+          "text": "Reply with one word: ok"
+        }
+      ]
+    }
+  ]
+}

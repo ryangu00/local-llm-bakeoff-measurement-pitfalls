@@ -1,0 +1,86 @@
+{
+  "model": "Qwen3.8-Flash-Next-1M",
+  "arm": "vendor-informed",
+  "sampling": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0
+  },
+  "chat_kwargs": {
+    "enable_thinking": true,
+    "preserve_thinking": true,
+    "reasoning_effort": "xhigh"
+  },
+  "max_tokens": 32768,
+  "system": "",
+  "preserve_reasoning": true,
+  "verified_by": "VERIFY-example.md sha256:<replace-with-verified-report-hash>",
+  "field_sources": {
+    "sampling.temperature": "official",
+    "sampling.top_p": "official",
+    "sampling.top_k": "official",
+    "sampling.min_p": "official",
+    "sampling.presence_penalty": "official",
+    "sampling.repetition_penalty": "official",
+    "chat_kwargs.enable_thinking": "inferred",
+    "chat_kwargs.preserve_thinking": "official",
+    "chat_kwargs.reasoning_effort": "official",
+    "max_tokens": "inferred",
+    "system": "inferred",
+    "preserve_reasoning": "inferred"
+  },
+  "sources": [
+    {
+      "fact": "Thinking-mode sampling",
+      "quote": "temperature=1.0, top_p=0.95, top_k=20, min_p=0.0, presence_penalty=0.0",
+      "kind": "official",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next"
+    },
+    {
+      "fact": "Repetition penalty",
+      "quote": "presence_penalty=0.0, repetition_penalty=1.0",
+      "kind": "official",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next"
+    },
+    {
+      "fact": "Effort names",
+      "quote": "xhigh by default; supported levels are xhigh, medium, and low",
+      "kind": "official",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next"
+    },
+    {
+      "fact": "Reasoning retention",
+      "quote": "retains thinking blocks from all historical messages",
+      "kind": "official",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next"
+    },
+    {
+      "fact": "Reasoning output recommendation",
+      "quote": "Reasoning Content: Set the maximum output length to 262,144 tokens.",
+      "kind": "official",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next"
+    },
+    {
+      "fact": "Final answer output recommendation",
+      "quote": "Final Response: Set the maximum output length to 131,072 tokens.",
+      "kind": "official",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next"
+    },
+    {
+      "fact": "Native context",
+      "quote": "natively supports context lengths of up to 262,144 tokens",
+      "kind": "official",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next"
+    }
+  ],
+  "limitations": [
+    "The combined output cap is an inferred operational budget, below the model-card recommendations.",
+    "No independent verification report is shipped; source quotations are supplied records, not a fresh web verification.",
+    "The recipe name does not prove a deployed context window or served weights identity.",
+    "The enable_thinking key, empty system prompt and client reasoning echo are inferred integration choices.",
+    "Per-scenario sampling and serving-layer normalization must be checked separately."
+  ]
+}

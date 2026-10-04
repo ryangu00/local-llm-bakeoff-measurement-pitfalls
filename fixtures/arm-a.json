@@ -1,0 +1,21 @@
+{
+  "bank_hash": "synthetic-bank",
+  "grader_version": "synthetic-grader-A",
+  "recipe_arm": "harness-uniform",
+  "sampling": {
+    "temperature": 0.5,
+    "top_p": 0.95
+  },
+  "chat_template_kwargs": {
+    "reasoning_effort": "low"
+  },
+  "max_tokens": 8000,
+  "system": "",
+  "thinking": true,
+  "served_identity": "synthetic-model@revision-A",
+  "grader_env": {
+    "python": "environment-A",
+    "pytest": "fixture",
+    "tool_eval_bench": "fixture"
+  }
+}

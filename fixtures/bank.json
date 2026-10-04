@@ -1,0 +1,27 @@
+{
+  "c1-kbqa": [
+    {
+      "prompt": "Reply with the word fixture."
+    }
+  ],
+  "c4-code": [
+    {
+      "prompt": "Reply with the word fixture."
+    }
+  ],
+  "c5-extract": [
+    {
+      "prompt": "Reply with the word fixture."
+    }
+  ],
+  "c7-zhif": [
+    {
+      "prompt": "Reply with the word fixture."
+    }
+  ],
+  "c10-sre-ops": [
+    {
+      "prompt": "Reply with the word fixture."
+    }
+  ]
+}
