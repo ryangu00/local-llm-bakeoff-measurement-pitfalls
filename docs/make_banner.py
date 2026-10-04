@@ -53,7 +53,7 @@ d.text((82, 462), "TIMING · IDENTITY · GATES · DELL PRO MAX WITH GB10", font=
 
 # right: three tiers as slabs (isometric-ish parallelograms), stacked
 SX, SY = 860, 150
-tiers = [("G1  REQUEST", "01"), ("G2  MEASURE", "02"), ("G3  COMPARE", "03")]
+tiers = [("REQUEST", "01"), ("MEASURE", "02"), ("COMPARE", "03")]
 slab_w, slab_h, skew, gap = 260, 58, 42, 52
 boxes = []
 for i, (name, num) in enumerate(tiers):
@@ -84,7 +84,7 @@ top, bot = boxes[0] + slab_h + 6, boxes[2] - 6
 d.line([(rx, bot), (rx, top)], fill=ORANGE, width=2)
 d.polygon([(rx, top - 2), (rx - 6, top + 10), (rx + 6, top + 10)], fill=ORANGE)
 d.ellipse([rx - 5, bot - 5, rx + 5, bot + 5], fill=ORANGE)
-d.text((rx + 14, (top + bot) // 2 - 8), "VERIFY", font=f_label, fill=ORANGE)
+d.text((rx + 14, top + 6), "VERIFY", font=f_label, fill=ORANGE)
 
 # footer rule + labels
 d.line([(80, 560), (W - 80, 560)], fill=(40, 40, 40), width=1)
